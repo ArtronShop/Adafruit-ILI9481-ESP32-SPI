@@ -151,7 +151,7 @@ void Adafruit_ILI9481_ESP32_SPI::begin(void)
 	SPI.beginTransaction(SPISettings(240000000, MSBFIRST, SPI_MODE0));
 	
 	commandList(default_init_sequence);
-	invertDisplay(true);
+	// invertDisplay(true);
 }
 /*****************************************************************************/
 void Adafruit_ILI9481_ESP32_SPI::setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1)
